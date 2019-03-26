@@ -1,5 +1,5 @@
 import Route from '@ember/routing/route';
-import EmberObject from '@ember/object';
+import /* EmberObject, */ { set } from '@ember/object';
 
 export default Route.extend({
     templateName: 'developer/new',
