@@ -1,0 +1,10 @@
+<h1>Update</h1>
+
+<form>
+  {{input value=model.nom placeholder="Nom"}}
+  {{input value=model.prenom placeholder="Prénom"}}
+  {{input value=model.email placeholder="E-Mail"}}
+  <button {{action "updateContact" model}} class="btn btn-success">
+</form>
+
+{{outlet}}

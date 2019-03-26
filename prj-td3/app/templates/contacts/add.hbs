@@ -1,0 +1,15 @@
+
+<div class="row">
+  <div class="col">
+    {{input value=model.nom placeholder="Nom"}}
+  </div>
+  <div class="col">
+    {{input value=model.prenom placeholder="Prénom"}}
+  </div>
+  <div class="col">
+    {{input value=model.email placeholder="E-mail"}}
+  </div>
+  <button {{action "addContact" model}} class="btn btn-success">Valider</button>
+</div>
+
+{{outlet}}

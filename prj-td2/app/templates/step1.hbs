@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            {{multi-select elements=model.dispoItems selectedIds=model.dispoItemsIds_}}
+        </div>
+        <div class="col-sm">
+            {{#bs-button block=true}}{{fa-icon "arrow-alt-from-left"}}{{/bs-button}}
+            {{#bs-button block=true}}{{fa-icon "arrow-alt-from-right"}}{{/bs-button}}
+        </div>
+        <div class="col-sm">
+            {{multi-select elements=model.includedItems selectedIds=model.includedItemsIds_}}
+        </div>
+    </div>
+</div>
+
+<!-- {{#each model.dispoItems_ as |elm|}}
+    {{elm.title}}
+{{/each}} -->
+
+{{outlet}}
